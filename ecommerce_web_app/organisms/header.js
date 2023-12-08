@@ -85,9 +85,9 @@ const AppHeader = () => {
           }}
         >
           <Dropdown overlay={categoriesMenu}>
-            <a className="ant-dropdown-link" href="#"  style={{fontSize: "16px"}}>
+            <Link className="ant-dropdown-link" href="/categories/iphones" style={{fontSize: "16px"}}>
               Categories
-            </a>
+            </Link>
           </Dropdown>
         </Menu.Item>
         <Menu.Item
