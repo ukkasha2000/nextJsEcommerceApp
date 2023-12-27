@@ -2,22 +2,9 @@
 import React from 'react';
 import style from './style.module.css'
 import { Card, Button } from '@/atoms';
-// import { useDispatch } from 'react-redux';
-// import { addToCart } from '../../redux/actions/cartActions';
-// import { notification } from 'antd';
-// import { FcApproval } from "react-icons/fc";
 
 
 const ProductCard = ({data}) => {
-    // const dispatch = useDispatch();
-    // const addingFunc = (v) => {
-    //     notification.open({
-    //         message: 'Item Added To Cart Successfully',
-    //         icon: <FcApproval />,
-    //         placement:'topLeft'
-    //     });
-    //     dispatch(addToCart(v));
-    // }
     return (
         <>
             <Card className={style.ProductMaincard} cover={<img alt="example" src={data?.imgsrc} className={style.imgcard} />}>

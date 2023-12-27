@@ -6,7 +6,6 @@ export default function DashboardLayout({
   return (
     <section>
       <AppHeader />
-
       {children}
     </section>
   );

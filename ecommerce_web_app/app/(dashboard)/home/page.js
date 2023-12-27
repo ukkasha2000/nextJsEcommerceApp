@@ -18,7 +18,7 @@ const HomePage = () => {
           >
             <div>
                 <CategoryCard
-                  src="/assets/images/alliphones.jpeg"
+                  src="/assets/images/allIphones.jpeg"
                   alt="Iphones"
                   title="Iphones"
                   description="Welcome to our iPhone Wonderland, where cutting-edge technology meets unparalleled design. Explore our curated collection of iPhones, meticulously selected to provide you with the best in performance, style, and innovation."

@@ -8,6 +8,7 @@ import {
   UserOutlined,
 } from "@ant-design/icons";
 import { useState } from "react";
+import CartDrawer from "@/molecules/cartDrawer";
 
 const { Header } = Layout;
 
@@ -24,15 +25,16 @@ const categoriesMenu = (
 
 const AppHeader = () => {
   const [selectedKeys, setSelectedKeys] = useState(["home"]);
+  const [visible, setVisible] = useState(false);
+  const showDrawer = () => {
+    setVisible(true);
+  };
 
   const handleMenuClick = (e) => {
     setSelectedKeys([e.key]);
   };
   return (
-    <Header
-      className="header"
-      style={{ padding: "10px", height: "100%" }}
-    >
+    <Header className="header" style={{ padding: "10px", height: "100%" }}>
       <div className="logo">
         <Link href="/home"></Link>
       </div>
@@ -44,10 +46,7 @@ const AppHeader = () => {
         onClick={handleMenuClick}
       >
         <Menu.Item key="0" disabled={true}>
-          <Image
-            src="/assets/images/ibsmain.png"
-            alt="Iphones By Shah"
-          />
+          <Image src="/assets/images/ibsmain.png" alt="Iphones By Shah" />
         </Menu.Item>
         <Menu.Item
           key="home"
@@ -58,8 +57,11 @@ const AppHeader = () => {
             marginRight: "20px",
           }}
         >
-          <HomeOutlined style={{fontSize: "16px", marginRight: "2px"}} />
-          <Link href="/home" style={{fontSize: "16px"}}> Home </Link>
+          <HomeOutlined style={{ fontSize: "16px", marginRight: "2px" }} />
+          <Link href="/home" style={{ fontSize: "16px" }}>
+            {" "}
+            Home{" "}
+          </Link>
         </Menu.Item>
         <Menu.Item
           key="about"
@@ -70,8 +72,13 @@ const AppHeader = () => {
             marginRight: "20px",
           }}
         >
-          <InfoCircleOutlined style={{fontSize: "16px", marginRight: "2px"}} />
-          <Link href="/about" style={{fontSize: "16px"}}> About </Link>
+          <InfoCircleOutlined
+            style={{ fontSize: "16px", marginRight: "2px" }}
+          />
+          <Link href="/about" style={{ fontSize: "16px" }}>
+            {" "}
+            About{" "}
+          </Link>
         </Menu.Item>
         <Menu.Item
           key="categories"
@@ -85,7 +92,11 @@ const AppHeader = () => {
           }}
         >
           <Dropdown overlay={categoriesMenu}>
-            <Link className="ant-dropdown-link" href="/categories/iphones" style={{fontSize: "16px"}}>
+            <Link
+              className="ant-dropdown-link"
+              href="/categories/iphones"
+              style={{ fontSize: "16px" }}
+            >
               Categories
             </Link>
           </Dropdown>
@@ -101,7 +112,9 @@ const AppHeader = () => {
             borderRadius: "50%",
           }}
         >
-          <Link href="/contactUs" style={{fontSize: "16px"}}>Contact Us</Link>
+          <Link href="/contactUs" style={{ fontSize: "16px" }}>
+            Contact Us
+          </Link>
         </Menu.Item>
         <Menu.Item
           key="cart"
@@ -117,7 +130,9 @@ const AppHeader = () => {
               top: "5px",
               position: "relative",
             }}
+            onClick={showDrawer}
           />
+          <CartDrawer visibility={visible} setVisible={setVisible} />
         </Menu.Item>
         <Menu.Item
           key="user"

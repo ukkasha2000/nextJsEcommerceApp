@@ -1,0 +1,87 @@
+{
+    "products": [
+        {
+            "mobilePhones": [
+                {
+                    "id": "mob1",
+                    "imgsrc": "http://cdn.shopify.com/s/files/1/0507/0844/7408/products/WechatIMG1322_1200x1200.jpg?v=1646323246",
+                    "productTitle": "Iphone 13 Pro Max",
+                    "productPrice": 320000,
+                    "qtyInCart": 1
+                },
+                {
+                    "id": "mob2",
+                    "imgsrc": "https://www.pakmobizone.pk/wp-content/uploads/2022/02/Samsung-Galaxy-S22-Ultra-5G-Green-8.jpg",
+                    "productTitle": "Samsung S22 Ultra",
+                    "productPrice": 250000,
+                    "qtyInCart": 1
+                },
+                {
+                    "id": "mob3",
+                    "imgsrc": "https://www.pakmobizone.pk/wp-content/uploads/2021/10/Realme-GT-Master-Edition-Voyager-Grey-1.png",
+                    "productTitle": "Realme GT ME",
+                    "productPrice": 60000,
+                    "qtyInCart": 1
+                },
+                {
+                    "id": "mob4",
+                    "imgsrc": "https://asia-exstatic-vivofs.vivo.com/PSee2l50xoirPK7y/1651807558189/e7db3841bf6db0ac7a6f58948e8ab515.png",
+                    "productTitle": "Vivo X80 Pro",
+                    "productPrice": 160000,
+                    "qtyInCart": 1
+                },
+                {
+                    "id": "mob5",
+                    "imgsrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8nDB9RiPFQ41H532Mh_4YFYpaiVaJM1rILQ&usqp=CAU",
+                    "productTitle": "Xiaomi 11T Pro",
+                    "productPrice": 120000,
+                    "qtyInCart": 1
+                },
+                {
+                    "id": "mob6",
+                    "imgsrc": "https://www.pakmobizone.pk/wp-content/uploads/2021/10/Apple-iphone-13-Pink-2.png",
+                    "productTitle": "Iphone 13",
+                    "productPrice": 240000,
+                    "qtyInCart": 1
+                }
+            ],
+            "accessories": [
+                {
+                    "id": "accessories1",
+                    "imgsrc": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MTJV3?wid=532&hei=582&fmt=png-alpha&.v=1694014871985",
+                    "productTitle": "Apple Airpods",
+                    "productPrice": 35000,
+                    "qtyInCart": 1
+                },
+                {
+                    "id": "accessories2",
+                    "imgsrc": "https://apple-store.pk/wp-content/uploads/2022/12/alu-spacegray-sp.jpg",
+                    "productTitle": "Apple Watch",
+                    "productPrice": 90000,
+                    "qtyInCart": 1
+                },
+                {
+                    "id": "accessories3",
+                    "imgsrc": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airtag-4pack-select-202104_FMT_WHH?wid=532&hei=582&fmt=png-alpha&.v=1617761669000",
+                    "productTitle": "Airtag",
+                    "productPrice": 15000,
+                    "qtyInCart": 1
+                },
+                {
+                    "id": "accessories4",
+                    "imgsrc": "https://applecompany.pk/wp-content/uploads/2022/05/I-pad-pencil-1-300x300.webp",
+                    "productTitle": "Apple pencil",
+                    "productPrice": 70000,
+                    "qtyInCart": 1
+                },
+                {
+                    "id": "accessories5",
+                    "imgsrc": "https://www.thebrandstore.pk/media/catalog/product/cache/c6a99b8cca15068ddf9e47e30b9d54a9/u/s/usb_to_lightining.jpg",
+                    "productTitle": "Lightning cable",
+                    "productPrice": 40000,
+                    "qtyInCart": 1
+                }
+            ]
+        }
+    ]
+}
