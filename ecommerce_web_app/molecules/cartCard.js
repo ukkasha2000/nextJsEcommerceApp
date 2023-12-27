@@ -2,7 +2,6 @@
 import React from 'react';
 import { Card, notification } from 'antd';
 import style from './style.module.css';
-import { MdDeleteForever } from "react-icons/md";
 
 const CartCard = ({ itemData }) => {
   const { cart } = useSelector((state) => state.shopReducer);
@@ -17,7 +16,6 @@ const CartCard = ({ itemData }) => {
   const deleteFunc = (id) => {
     notification.open({
       message: 'Item Removed From Cart',
-      icon: <MdDeleteForever style={{color:"red"}} />,
       placement:'topLeft'
   });
   }

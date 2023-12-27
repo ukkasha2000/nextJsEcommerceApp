@@ -4,7 +4,6 @@ import { Drawer } from 'antd';
 import style from './style.module.css';
 import CartCard from './cartCard';
 import { notification } from 'antd';
-import { TiDelete } from "react-icons/ti";
 
 
 const CartDrawer = ({ visibility, setVisible}) => {
